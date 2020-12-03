@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>TAGS - Desenvolvimento Web</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "TAGS";
+    var mkdocs_page_input_path = "aula00.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Desenvolvimento Web</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Bem vindo!</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">TAGS</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#definicoes-e-conceitos">Definições e conceitos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#caracteres-delimitadores">Caracteres delimitadores</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#texto">Texto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nome">Nome</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-de-fechamento">Tag de fechamento</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#estrutura-html">Estrutura HTML</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-html">TAG HTML</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-head">TAG HEAD</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#tag-meta">TAG META</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-body">TAG BODY</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#instrucao-doctype">INSTRUÇÃO !DOCTYPE</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#textos">Textos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#titulos-h">Títulos H</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#paragrafos">Parágrafos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enfase">Ênfase</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quebra-de-linha">Quebra de linha</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linha-horizontal">Linha Horizontal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#link">Link</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multimidia">Multimídia</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#imagem">Imagem</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#audio">Audio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iframe">Iframe</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#listas">Listas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#formularios">Formulários</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-input">TAG INPUT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-textarea">TAG TEXTAREA</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#script">SCRIPT</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#html5">HTML5</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#header">&lt;header&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#main">&lt;main&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#footer">&lt;footer&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#section">&lt;section&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#article">&lt;article&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aside">&lt;aside&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nav">&lt;nav&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#div">&lt;div&gt;</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tags-expressas">Tags Expressas</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../boas_praticas/">Boas Práticas</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Desenvolvimento Web</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>TAGS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="tags">TAGS</h1>
+<h2 id="definicoes-e-conceitos">Definições e conceitos</h2>
+<p>Tome de exemplo a tag:  <code>&lt;h1&gt;Mirror Fashion&lt;/h1&gt;</code></p>
+<h3 id="caracteres-delimitadores">Caracteres delimitadores</h3>
+<p>Uma tag é definida com caracteres <code>&lt;</code> e <code>&gt;</code></p>
+<h3 id="texto">Texto</h3>
+<p>Muitas tags possuem conteúdo, como o texto do título.</p>
+<pre><code>Mirror Fashion
+</code></pre>
+<h3 id="nome">Nome</h3>
+<p>No exemplo seu nome é:</p>
+<pre><code>H1
+</code></pre>
+<h3 id="tag-de-fechamento">Tag de fechamento</h3>
+<p>Para determinar onde o conteúdo acaba, usamos uma tag de fechamento com a barra antes do nome.</p>
+<p>Tags que não possuem conteúdo, como a tag <code>&lt;img&gt;</code>, não necessitam de tag de fechamento
+    </h1></p>
+<h2 id="estrutura-html">Estrutura HTML</h2>
+<h3 id="tag-html">TAG HTML</h3>
+<pre><code>&lt;html&gt;
+</code></pre>
+<p>Tag principal do nosso documento, dentro dela que será declarada as demais tags.</p>
+<p>Dentro dessa tag, é necessário declarar outras duas tags: <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>.</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;!--- Cabeça ---&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!--- Corpo ---&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<h3 id="tag-head">TAG HEAD</h3>
+<p>Contém informações sobre nosso documento que são de interesse somente do navegador, e não dos visitantes do nosso site.</p>
+<p>A especificação obriga a presença da tag de conteúdo <code>&lt;title&gt;</code> dentro do nosso <code>&lt;head&gt;</code>, permitindo especificar o título do nosso documento.</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;
+            Mirror Fashion
+        &lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="tag-meta">TAG META</h4>
+<p>Podemos configurar qual codificação queremos utilizar em nosso documento por meio da configuração de charset na tag <code>&lt;meta&gt;</code></p>
+<p>Configuração muito utilizada, principalmente em documentos cujo conteúdo é escrito em um idioma como o português, que tem caracteres como <strong>acentos e cedilha</strong>, é a configuração da codificação de caracteres, chamado de encoding ou charset.</p>
+<p>O <code>UTF-8</code> é a recomendação atual para encoding na Web por ser amplamente suportada em navegadores e
+editores de código, além de ser compatível com praticamente todos os idiomas do mundo.</p>
+<h3 id="tag-body">TAG BODY</h3>
+<p>A tag <code>&lt;body&gt;</code> contém o corpo do nosso documento.</p>
+<p>É necessário que o <body> tenha ao menos um elemento “filho”, ou seja, uma ou mais tags HTML dentro dele.</p>
+<h3 id="instrucao-doctype">INSTRUÇÃO !DOCTYPE</h3>
+<p>O <em>DOCTYPE</em> não é uma tag HTML, mas uma instrução especial. Ela indica para o navegador qual versão do HTML deve ser utilizada para renderizar a página. </p>
+<p>Utilizaremos <code>&lt;!DOCTYPE html&gt;</code>, que indica para o navegador a utilização da versão mais recente do HTML - a versão 6, atualmente.</p>
+<h2 id="textos">Textos</h2>
+<h3 id="titulos-h">Títulos H</h3>
+<p>Quando queremos indicar que um texto é um título em nossa página, utilizamos as tags de heading em sua
+marcação.</p>
+<p>As tags de heading são tags de conteúdo e vão de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, seguindo a ordem de importância.</p>
+<p><img alt="Tags heading" src="../img/titulos.png" /></p>
+<p>Os navegadores especiais para acessibilidade também interpretam o conteúdo dessas tags de maneira a diferenciar seu conteúdo e facilitar a navegação do usuário pelo documento.</p>
+<h3 id="paragrafos">Parágrafos</h3>
+<p>Quando exibimos qualquer texto em nossa página, é recomendado que ele seja sempre conteúdo de alguma tag filha da tag <code>&lt;body&gt;</code>. A marcação mais indicada para textos comuns é a tag de parágrafo <code>&lt;p&gt;</code>.</p>
+<pre><code>&lt;p&gt;
+    Isso é um parágrafo
+&lt;/p&gt;
+</code></pre>
+<h3 id="enfase">Ênfase</h3>
+<p>Podemos deixar um texto <strong>“mais forte” com a tag <code>&lt;strong&gt;</code></strong> ou deixar o texto com uma <em>“ênfase acentuada” com a tag <code>&lt;em&gt;</code></em>. Também há a tag <code>&lt;small&gt;</code>, <small>que diminui o tamanho do texto.</small></p>
+<p>Existem ainda as tags <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code>, que atingem o mesmo resultado visualmente, mas as tags
+<code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code> são mais indicadas por definirem nossa intenção de significado ao conteúdo, mais do que
+uma simples indicação visual.</p>
+<h3 id="quebra-de-linha">Quebra de linha</h3>
+<pre><code>&lt;br/&gt;
+</code></pre>
+<p>Essa tag não necessita de fechamento, ela executa a função de quebra de linha</p>
+<h3 id="linha-horizontal">Linha Horizontal</h3>
+<pre><code>&lt;hr/&gt;
+</code></pre>
+<p>Essa tag não necessita de fechamento, ela forma uma linha horizontal.</p>
+<h2 id="link">Link</h2>
+<p>Faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! Portanto, é o principal fundamento que forma a web.</p>
+<p>Para realizar um link, podemos chamar as tags <code>&lt;a&gt;&lt;/a&gt;</code> com o atributo <code>href</code>. Por exemplo, caso você queira criar um link no seu texto que redirecione à página inicial do google:</p>
+<pre><code>&lt;p&gt;Para acessar o Google, &lt;a href="https://www.google.com"&gt;clique aqui.&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+<p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+
+<h2 id="multimidia">Multimídia</h2>
+<p>Incluir imagens, vídeos, áudios, iframes e outros tipos de conteúdo multimídia.</p>
+<h3 id="imagem">Imagem</h3>
+<p>A tag <code>&lt;img&gt;</code> define uma imagem em uma página HTML e necessita de dois atributos preenchidos: 
+<code>src</code> e <code>alt</code></p>
+<p>O primeiro aponta para o local da imagem e o segundo, um texto alternativo para a imagem caso essa não possa ser carregada ou visualizada.</p>
+<pre><code>&lt;img src="imagem.jpg"&gt;  # Imagem local
+
+&lt;img src="../imagens/img01.jpg"&gt;    # Volta para pasta pai e navega até a imagem
+
+&lt;img src="https://meudominio.com/public_html/imagens/img01.jpg"&gt; # Imagem publica
+</code></pre>
+<p>A tag <code>&lt;figure&gt;</code> define uma imagem com a conhecida tag <code>&lt;img&gt;</code>. Além disso, permite adicionar uma legenda para a imagem por meio da tag <code>&lt;figcaption&gt;</code>.</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="http://2.bp.blogspot.com/-YBQy4ZLc6Wc/UG3YW4mmibI/
+    AAAAAAAADg4/qup3OfAPKe0/s200/imagesCAH6K9WI.jpg" alt="Foto do produto"&gt;
+    &lt;figcaption&gt;
+        Esqueleto Dimas
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<figure>
+<img src="http://2.bp.blogspot.com/-YBQy4ZLc6Wc/UG3YW4mmibI/AAAAAAAADg4/qup3OfAPKe0/s200/imagesCAH6K9WI.jpg" 
+alt="Foto do produto">
+<figcaption>
+Esqueleto Dimas
+</figcaption>
+</figure>
+<p><br/></p>
+<h3 id="video">Video</h3>
+<p>Indicar a inserção de um vídeo
+devemos colocar alguns atributos dentro da tag para poder ativar o controle, a principal dela é o controls. </p>
+<p>Posteriormente, incluímos a tag <code>&lt;source&gt;</code> com os atributos <code>src</code> e <code>type</code>, onde receberão o local em que está o vídeo e o tipo do vídeo. É recomendado utilizar mais de um tipo de source do mesmo vídeo, para garantir maior possibilidade de compatibilidade com o navegador.</p>
+<p>Podemos incluir uma mensagem que será renderizada apenas se o navegador do usuário não suportar a tag video.</p>
+<pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.ogg" type="video/ogg"&gt;
+    Seu navegador não possui suporte para Vídeos.
+&lt;/video&gt;
+</code></pre>
+<h3 id="audio">Audio</h3>
+<p>A tag <code>&lt;audio&gt;</code> funciona da mesma forma que a tag <code>&lt;video&gt;</code>, portanto, utilizamos a tag <code>&lt;source&gt;</code> dentro dela.</p>
+<pre><code>&lt;audio controls&gt;
+    &lt;source src="musica.ogg" type="audio/ogg"&gt;
+    &lt;source src="musica.mp3" type="audio/mpeg"&gt;
+    Seu navegador não possui suporte para áudio.
+&lt;/audio&gt;
+</code></pre>
+<h3 id="iframe">Iframe</h3>
+<p>Servem para incluir recursos de uma outra página nesta página</p>
+<p>Portanto, para inserir um iframe, basta utilizar a tag com o atributo <code>src</code>. Além disso, é possível incluir um texto dentro do elemento, caso o navegador do usuário não possua suporte para tal. </p>
+<pre><code>&lt;iframe src="https://www.homehost.com.br"&gt;
+    &lt;p&gt;Seu navegador não possui suporte para iFrames.&lt;/p&gt;
+&lt;/iframe&gt;
+</code></pre>
+<h2 id="listas">Listas</h2>
+<p>Podemos utilizar uma lista ordenada, a partir das tags <code>&lt;ol&gt;&lt;/ol&gt;</code>, ou uma lista não ordenada, a partir das tags <code>&lt;ul&gt;&lt;/ul&gt;</code></p>
+<p>Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags <code>&lt;li&gt;&lt;/li&gt;</code>.</p>
+<pre><code>&lt;p&gt;Minha lista ordenada:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<p>Minha lista ordenada:</p>
+<ol>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ol>
+<pre><code>&lt;p&gt;Minha lista não ordenada:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Minha lista não ordenada:</p>
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+
+<h2 id="formularios">Formulários</h2>
+<p>As tags de formulário são muito utilizadas para obter informações do usuário, realizar cadastros, receber opiniões, entre outros</p>
+<p>Para iniciar um formulário, incluímos as tags <code>&lt;form&gt;</code> e <code>&lt;/form&gt;</code>. </p>
+<p>Posteriormente, devemos incluir o conteúdo do formulário. Digamos que, por exemplo, você queira incluir três campos, sendo dois para coletar informações e um para receber uma mensagem. </p>
+<p>Desta forma, para criar os campos de preenchimento, deverá utilizar a tag <code>&lt;input&gt;</code>, enquanto para o campo referente à mensagem, deverá utilizar a tag <code>&lt;textarea&gt;</code>.</p>
+<h3 id="tag-input">TAG INPUT</h3>
+<p>A tag <code>&lt;input&gt;</code> possui o atributo <code>type</code>, que varia entre diversos tipos (vamos explicar os principais deles abaixo). Também há o atributo <code>placeholder</code>, que é um texto que ficará disponível enquanto nada for digitado nesse campo. Também é importante definir um atributo name para cada input.</p>
+<ul>
+<li>type = "text"<ul>
+<li>Define um campo que receberá qualquer caractere.</li>
+</ul>
+</li>
+<li>type = "email"<ul>
+<li>Define um campo que receberá caracteres e verificará se o mesmo consiste em um e-mail válido.</li>
+</ul>
+</li>
+<li>type = "submit"<ul>
+<li>Define um botão que servirá para o envio do formulário. Dentro dele, podemos atribuir o <code>value</code>, que será o texto dentro do botão de envio</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.w3schools.com/tags/tag_input.asp">Existem outros tipos de inputs</a></p>
+<h3 id="tag-textarea">TAG TEXTAREA</h3>
+<p>Assim como a tag <code>&lt;input&gt;</code>, essa tag define um campo para o formulário. Porém, diferentemente, ela tem como principal característica ser uma área de preenchimento de texto, ou seja, permite que o usuário escreva um texto ou uma mensagem no seu interior. Também traz opções para que o usuário redimensione seu tamanho (resize).</p>
+<h2 id="script">SCRIPT</h2>
+<p>A tag <code>&lt;script&gt;&lt;/script&gt;</code> tem como objetivo incluir códigos de scripts ao seu HTML, podendo ser incluída em qualquer parte. Dessa forma, podemos incluir nela um código javascript.</p>
+<h2 id="html5">HTML5</h2>
+<p>As tags abaixo são utilizadas nos documentos em HTML5, e têm função estrutural no seu código. </p>
+<p>Portanto, essas tags têm grande importância na questão semântica da sua página, saber utilizá-las pode adequar o seu código para uma melhor visualização por parte do navegador e do usuário, além de proporcionar uma otimização para os processos de SEO.</p>
+<p><img alt="Estrutura do HTML5" src="../img/html5_estrutura.png" /></p>
+<h3 id="header"><code>&lt;header&gt;</code></h3>
+<p>Essas tags definem um cabeçalho. Portanto, todo conteúdo que estiver dentro dela faz parte de um cabeçalho</p>
+<h3 id="main"><code>&lt;main&gt;</code></h3>
+<p>Essas tags representam o conteúdo principal do seu corpo, ou seja, o conteúdo relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação.</p>
+<h3 id="footer"><code>&lt;footer&gt;</code></h3>
+<p>Essas tags definem um rodapé para a página, geralmente utilizadas no final da página.</p>
+<h3 id="section"><code>&lt;section&gt;</code></h3>
+<p>Essas tags definem uma sessão para sua página.</p>
+<h3 id="article"><code>&lt;article&gt;</code></h3>
+<p>Essas tags definem um artigo da sua página. Nesse sentido, são utilizadas para separar o conteúdo da sua página. Muito utilizado principalmente por blogs ou páginas de conteúdo.</p>
+<h3 id="aside"><code>&lt;aside&gt;</code></h3>
+<p>Essas tags representam uma seção de uma página cujo conteúdo é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo.</p>
+<h3 id="nav"><code>&lt;nav&gt;</code></h3>
+<p>Essa tag define um conteúdo de navegação. Portanto, é muito utilizado em conjunto com listas e na criação de menus.</p>
+<h3 id="div"><code>&lt;div&gt;</code></h3>
+<p>Define uma divisão da página. Desta forma, funciona como um container para conteúdo de fluxo. Uma vez que não possui um valor semântico, é muito utilizado para organizar melhor o conteúdo.</p>
+<p>Anteriormente ao HTML5, era utilizado no lugar das categorias acima.</p>
+<h2 id="tags-expressas">Tags Expressas</h2>
+<p>Escrever tags para sites leva muito tempo, por exemplo, <code>&lt;logo&gt;</code> <code>&lt;/logo&gt;</code>, <code>&lt;navigation&gt;</code> <code>&lt;/navigation&gt;</code> e <code>&lt;sidebar&gt;</code> <code>&lt;/sidebar&gt;</code>. Com HTML6, as tags agora são expressas.</p>
+<p>Isso significa que podemos criar nossas próprias tags.</p>
+<p>Por exemplo, em vez de escrever <code>&lt;div id = 'container'&gt;</code>, os programadores podem simplesmente colocar <code>&lt;container&gt;</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../boas_praticas/" class="btn btn-neutral float-right" title="Boas Práticas">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Bem vindo!"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../boas_praticas/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
