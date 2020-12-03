@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "desenvolvimento_web"
+version = "0.1.0"
+description = "Repositório das aulas de desenvolvimento web"
+authors = ["eversonott <everson.ott@gmail.com>"]
+license = "GPL-3.0-only"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
