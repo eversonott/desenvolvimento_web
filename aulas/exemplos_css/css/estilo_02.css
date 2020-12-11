@@ -1,0 +1,26 @@
+h1{
+	color: rgb(255,200,0);	
+}
+
+h2{
+	color: rgb(255,255,255);
+	background-color: black;
+
+}
+
+p{
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+article{
+	border: dashed 2px red;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-left: 30px;
+	width: 250px;
+}
+
+section{
+	background-color: yellow;
+}
